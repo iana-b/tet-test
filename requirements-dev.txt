@@ -13,3 +13,5 @@ pycodestyle==2.13.0
 pyflakes==3.3.2
 Pygments==2.19.1
 pytest==8.4.0
+beautifulsoup4==4.13.4
+requests==2.32.4
