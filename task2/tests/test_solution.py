@@ -20,7 +20,6 @@ def test_parse_page_returns_expected_data():
     mock_response.text = html
     with patch("requests.get", return_value=mock_response):
         next_url, result = parse_page("/fake_url")
-
     assert next_url == "/next_page_url"
     assert result == {"А": 2}
 
