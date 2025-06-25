@@ -33,7 +33,8 @@ def get_animals():
     return total
 
 
-stats = get_animals()
-with open("beasts.csv", "w", encoding="UTF-8") as file_out:
-    for k, v in stats.items():
-        file_out.write(f"{k},{v}\n")
+if __name__ == "__main__":
+    stats = get_animals()
+    with open("beasts.csv", "w", encoding="UTF-8") as file_out:
+        for k, v in stats.items():
+            file_out.write(f"{k},{v}\n")
